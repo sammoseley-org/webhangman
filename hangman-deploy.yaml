@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webhangman
+  labels:
+    key1: val1
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      key1: val1
+  template:
+    metadata:
+      labels:
+        key1: val1
+    spec:
+      containers:
+      - name: webhangman
+        image: sammoseley/webhangman:v1.0
+        ports:
+        - containerPort: 5000
