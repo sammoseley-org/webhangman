@@ -1,0 +1,8 @@
+Create helm chart package from current chart dir:
+  836  helm package .
+
+Push helm chart to docker hub:
+  838  helm push bashhangman-0.1.95.tgz oci://registry-1.docker.io/sammoseley
+
+Update dependencies and install umbrella chart:
+  852  helm dep up ; helm upgrade --install bothhangman .

@@ -1,0 +1,3 @@
+# global values inherited by dependent charts
+bashhangman: 
+  port: 9876

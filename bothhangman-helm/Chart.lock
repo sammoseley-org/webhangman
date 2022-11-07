@@ -1,0 +1,9 @@
+dependencies:
+- name: bashhangman
+  repository: oci://registry-1.docker.io/sammoseley
+  version: 0.1.95
+- name: webhangman
+  repository: oci://registry-1.docker.io/sammoseley
+  version: 0.1.99
+digest: sha256:5320f92edf425f0cf81f30f334644be77eafbfbf47ea1f8900699c85e80a3edd
+generated: "2022-11-07T09:05:05.429619Z"

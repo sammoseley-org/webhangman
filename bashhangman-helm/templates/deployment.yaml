@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bashhangman
+  labels:
+    key1: bash
+spec:
+  #replicas: {{ .Values.replicaCount }}
+  replicas: 2
+  selector:
+    matchLabels:
+      key1: bash
+  template:
+    metadata:
+      labels:
+        key1: bash
+    spec:
+      containers:
+      - name: bashhangman
+       # image: sammoseley/bashhangman:0.1
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        stdin: true 
+        tty: true 
+        ports:
+        - containerPort: 2000

@@ -1,0 +1,11 @@
+apiVersion: v2  # v2 = Helm3
+name: both-hangmans
+type: application
+version: 1.2.8
+dependencies:
+  - name: bashhangman
+    version: 0.1.95
+    repository: oci://registry-1.docker.io/sammoseley
+  - name: webhangman
+    version: 0.1.99
+    repository: oci://registry-1.docker.io/sammoseley
